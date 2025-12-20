@@ -1,0 +1,8 @@
+# OpenHR - Open-Source HR Agent Platform
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+click==8.1.7
+langchain==0.0.340
+python-dotenv==1.0.0
+
