@@ -1,176 +1,84 @@
-# OpenHR - Open-Source HR Agent Platform
+# open-hr
 
-> Open-source HR/Finance agent platform with community-driven marketplace. Disrupts Workday through transparency, lower costs, and faster innovation.
+## Detailed Description
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+open-hr is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## 🎯 Overview
+## Problem Statement
 
-OpenHR is an open-source HR/Finance agent platform with a community-driven marketplace, disrupting Workday through transparency, lower costs, and faster innovation. The core platform is fully open-source, with enterprise extensions available.
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-**Why This Disrupts Workday:**
-- **Open-Source Core**: Fully open-source agent framework
-- **Community-Driven**: Agents contributed by community (faster innovation)
-- **Lower Costs**: Free tier available, no vendor lock-in
-- **Marketplace Model**: Revenue share for contributors (network effects)
-- **Multi-Platform**: Works with any HR/Finance system
+## Solution Overview
 
-## ✨ Core Components
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### 1. **Open-Source Agent Framework**
-- Core agent runtime (open-source)
-- Agent orchestration engine
-- API framework
-- Integration connectors
-- Basic HR/Finance agents (open-source)
+## Key Features
 
-### 2. **Agent Marketplace**
-- Community-contributed agents
-- Industry-specific agents (healthcare, retail, manufacturing)
-- Role-specific agents (recruiter, payroll admin, CFO)
-- Custom agent builder (no-code/low-code)
-- Rating and review system
-- Revenue share for contributors
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### 3. **Enterprise Extensions** (Paid)
-- Advanced AI models (GPT-4, Claude)
-- Enterprise security (SSO, MFA, RBAC)
-- Compliance features (SOX, GDPR, HIPAA)
-- 24/7 support and SLA
-- Professional services
-- White-label options
+## Repository Structure
 
-### 4. **Cloud Hosting** (SaaS)
-- Managed agent service
-- Multi-tenant architecture
-- Auto-scaling
-- Global deployment
-- Transaction-based pricing option
-
-## 🚀 Quick Start
-
-```bash
-# Install OpenHR
-pip install open-hr
-
-# Initialize agent framework
-open-hr init --company "Acme Corp"
-
-# Install community agent
-open-hr marketplace install --agent "recruiting-agent"
-
-# Run agent
-open-hr agent run --agent "recruiting-agent" --job-title "Software Engineer"
-
-# Create custom agent
-open-hr agent create --name "custom-onboarding" --template "onboarding"
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-## 💰 Pricing Model
+## Getting Started
 
-### Community Edition
-- **Open-Source Core**: Free, self-hosted
-- **Basic Agents**: Free
-- **Community Support**: Free (Discord, GitHub)
+### Prerequisites
 
-### Enterprise Edition
-- **Advanced Features**: $50K-$500K/year
-  - Advanced AI models
-  - Enterprise security
-  - Compliance features
-  - 24/7 support and SLA
+- Git
+- Project runtime/toolchain for this repo
 
-### Cloud Edition
-- **Managed Service**: $500-$5,000/month
-  - Transaction-based pricing option
-  - Auto-scaling
-  - Global deployment
-  - Premium support
+### Local Setup
 
-### Marketplace Commission
-- **Agent Sales**: 10-20% commission
-- **Revenue Share**: Contributors earn 80-90% of sales
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
+```
 
-### Professional Services
-- **Implementation**: $200-$500/hour
-- **Training**: $5K-$50K per training
-- **Custom Development**: $50K-$200K per agent
+## Usage
 
-## 📊 Market Opportunity
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-- **Workday Total Revenue**: ~$7-8B/year
-- **Target Market Share**: 1-2% = $70M-$160M opportunity
-- **Key Advantage**: Open-source = trust, transparency, faster innovation
+## Quality Standards
 
-## 🛠️ Tech Stack
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-- **Backend**: Python (FastAPI), Node.js
-- **AI/ML**: OpenAI, Anthropic, open-source models (Llama, Mistral)
-- **Frontend**: React, TypeScript
-- **Database**: PostgreSQL, Redis
-- **Container**: Kubernetes, Docker
-- **Integration**: REST APIs, webhooks
+## Security
 
-## 🎯 Target Customers
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-1. **Developers and Startups**
-   - Cost-conscious
-   - Want open-source
-   - Modern tech stack preferred
-   - No vendor lock-in
+## Contributing
 
-2. **Mid-Market Enterprises**
-   - Workday is too expensive
-   - Need enterprise features
-   - Willing to try alternatives
-   - Growth companies
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-3. **System Integrators**
-   - Want alternatives to offer clients
-   - Higher margins on open-source
-   - Differentiation opportunity
+## Roadmap
 
-## 🚀 Go-to-Market Strategy
+Track upcoming milestones, technical debt, and planned feature work.
 
-1. **Build Community First**
-   - Open-source core on GitHub
-   - Active Discord/Slack community
-   - Documentation and tutorials
-   - Conference talks and workshops
+## Support
 
-2. **Target Developers**
-   - HR/Finance engineers building automation
-   - DevOps teams deploying AI
-   - Startups and scale-ups
-   - Cost-conscious enterprises
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
-3. **Enterprise Upsell**
-   - Free for small deployments
-   - Paid for enterprise features
-   - Support and professional services
-   - Compliance certifications
+## License
 
-4. **Partner with System Integrators**
-   - Accenture, Deloitte, PwC
-   - HR/Finance consultants
-   - AI implementation partners
-
-## 📈 Competitive Advantages
-
-- **Open-Source**: Trust, transparency, community-driven innovation
-- **Lower Costs**: Free tier available, no vendor lock-in
-- **Faster Innovation**: Community contributions vs. Workday's quarterly releases
-- **Marketplace**: Network effects, revenue share for contributors
-- **Multi-Platform**: Works with any HR/Finance system
-
-## 📝 License
-
-Apache 2.0
-
-## 🔗 Related Products
-
-- [AgentHR](./../agent-hr) - AI-Native HCM Platform
-- [AgentFinance](./../agent-finance) - AI-Native Finance Platform
-- [WorkdayExit](./../workday-exit) - Workday Migration Platform
-- [LeanOrg](./../lean-org) - Organizational Efficiency Platform
-
+This project is released under the MIT License.
